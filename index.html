@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/logo2 (3).png" type="image/x-icon">
+<title>Real Estate</title>
+<link rel="stylesheet" href="index.css">
+
+
+<style>
+    .wrapper {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+    .rightimage{
+        height: 300px;
+        border-top-right-radius: 170px;
+        border-top-left-radius: 170px;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dropdown-content button {
+    color: black;
+  }
+
+  .selected{
+    background-color: #bdbfc2;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="wrapper bg-slate-100">
+
+    <!-- nav bar -->
+    <div class="bg-slate-100 w-full flex flex-row  justify-evenly mt-2">
+        <!-- log -->
+        <div>
+            <img   src="images/logo2 (3).png" alt="logo" width="60"  />
+        </div>
+        <!-- nav list -->
+        <div class="">
+            <ul class="flex items-center justify-center gap-10">
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">Home</li>
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">Sell Property</li>
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">Buy Property</li>
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">About</li>      
+                <a href="login.html"><button class="py-2 px-3 font-mullish rounded-lg text-sm font-bold
+                     bg-sky-700 text-white border transition-all duration-200
+                     hover:text-sky-950 hidden lg:flex items-center 
+                     ">Sign Up</button></a>
+
+                     
+                <!-- hamburger -->
+
+                <button class=" items-center block lg:hidden px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-gray-500 hover:border-white " id="menu-btn">
+                  <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+                </ul>
+
+                
+        </div>
+    </div>
+
+    
+
+        <!-- Hero section main page-->
+
+        <div class="bg-slate-100 flex mt-6 max-w-[1440px] justify-center mx-auto gap-2">
+
+            <!-- left part  -->
+            <div class="flex flex-col justify-center gap-5">
+
+                <p class="font-bold text-[35px] ">
+                    Let's find morden Home <br/>
+                    for you
+                </p>
+
+                <p class="opacity-50 text-[12px]">
+                    Find a home or space from our search bar. Enter Your<br/>
+                    specific location property type and price range.
+                </p>
+                
+                <div class="flex items-center">
+        
+                    <form class="relative ">
+                      <input class="block bg-white border-2 focus:bg-white border-gray-300 rounded-lg py-2 px-16 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Search Area...">
+                      <button type="submit" class="absolute inset-y-0 right-0 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg">Search</button>
+                    </form>
+                  </div>
+
+            </div>
+
+            <!-- right part -->
+            
+            <img class="rightimage hidden lg:block" src="images/img1.jpg" alt="img" />
+              
+        </div>
+
+
+        
+        <!-- card section main page-->
+
+        <section class=" max-w-[1440px] justify-between mt-24">
+
+            <h2 class="font-bold text-[35px] mx-auto text-center ">Feature Property</h2>
+
+            <div class="lg:flex lg:justify-evenly grid justify-items-center grid-cols-2">
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg w-[280px] flex-wrap h-auto mt-16 hover:scale-105 hover:shadow-2xl transition-all duration-200">
+            <img  src="images/cityimg4.jpg" alt="Product Image" width="310px" />
+            <div class="px-4 py-4">
+              <h2 class="font-bold text-xl mb-2">Buy Property</h2>
+              <p class="text-gray-700 text-base">Lorem ipsum dolnd aliquam dolor. Nullam feugiat urna sit amet sapien facilisis, at vestibulum eros lacinia.</p>
+              <p class="font-bold text-lg mt-4">price-690</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+            </div>
+          </div>
+          
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg w-[280px] h-auto mt-16 hover:scale-105 hover:shadow-2xl transition-all duration-200">
+            <img  src="images/cityimg4.jpg" alt="Product Image" width="310px" />
+            <div class="px-4 py-4">
+              <h2 class="font-bold text-xl mb-2">sell Property</h2>
+              <p class="text-gray-700 text-base">Lorem ipsum dolnd aliquam dolor. Nullam feugiat urna sit amet sapien facilisis, at vestibulum eros lacinia.</p>
+              <p class="font-bold text-lg mt-4">price- 800</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+            </div>
+          </div>
+          
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg w-[280px] h-auto mt-16 hover:scale-105 hover:shadow-2xl transition-all duration-200">
+            <img  src="images/cityimg4.jpg" alt="Product Image" width="310px" />
+            <div class="px-4 py-4">
+              <h2 class="font-bold text-xl mb-2">Third card</h2>
+              <p class="text-gray-700 text-base">Lorem ipsum dolnd aliquam dolor. Nullam feugiat urna sit amet sapien facilisis, at vestibulum eros lacinia.</p>
+              <p class="font-bold text-lg mt-4">price-650</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+            </div>
+          </div>
+          
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg w-[280px] h-auto mt-16 hover:scale-105 hover:shadow-2xl transition-all duration-200">
+            <img  src="images/cityimg4.jpg" alt="Product Image" width="310px" />
+            <div class="px-4 py-4">
+              <h2 class="font-bold text-xl mb-2">fourth card</h2>
+              <p class="text-gray-700 text-base">Lorem ipsum dolnd aliquam dolor. Nullam feugiat urna sit amet sapien facilisis, at vestibulum eros lacinia.</p>
+              <p class="font-bold text-lg mt-4">price-500</p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Buy Now</button>
+            </div>
+          </div>
+
+        </div>
+
+        </section>
+
+
+        <!-- why choose us main page -->
+
+        <section class="flex max-w-[1440px] justify-center gap-16 mt-6 h-[500px]">
+
+            <!-- left part  -->
+
+            <div class="mt-6">
+                <h2 class="font-bold text-[35px]">
+                    Why choose us
+                </h2>
+                <div class="flex flex-col gap-10 mt-20">
+                <div class="flex  items-center gap-3">
+                   <p class="w-6 h-6 border text-center"><i class="fa-solid fa-shield" style="color: #45d3a4;"></i></p> 
+                    <p>East and Safe<br/>
+                    <span class="opacity-50 text-[12px]">find your many rael property type.</span>
+                    </p>
+                </div>
+                <div class="flex items-center gap-3">
+                   <p class="w-6 h-6 border text-center"><i class="fa-solid fa-building-lock" style="color: #45d3a4;"></i></p> 
+                    <p>Investment Property<br/>
+                    <span class="opacity-50 text-[12px]">On the Resideence platform</p></span>
+                </div>
+                <div class="flex  items-center gap-3">
+                    <p class="w-6 h-6 border text-center"><i class="fa-solid fa-handshake-simple" style="color: #45d3a4;"></i></p>
+                    <p>Trusted Partnerships<br/>
+                    <span class="opacity-50 text-[12px]">More than 10-partners who work</p></span>
+                </div>
+                <div class="flex  items-center gap-3">
+                    <p class="w-6 h-6 border text-center"><i class="fa-sharp fa-solid fa-address-book" style="color: #45d3a4;"></i></p>
+                    <p>Licenses and Contract <br/>
+                    <span class="opacity-50 text-[12px]">Contrary to popular</p></span>
+                </div>
+             </div>
+             
+             <button class="btn bg-blue-500 text-white hover:bg-blue-700 rounded-lg px-6 py-2 mt-5 hover:text-blue-200">Explore</button>
+
+
+            </div>
+
+            <!-- right part -->
+
+            <div class="lg:flex lg:items-end hidden">
+                <img src="images/img2.jpg" alt="" />
+            </div>
+
+        </section>
+
+
+        <!-- customer review main page-->
+
+        <section class="w-full mt-20 bg-slate-300 ">
+            <div class="mt-9">
+            <h2 class="font-bold text-[35px] text-center pt-7 ">Customer Stories</h2>
+            </div>
+            <div class="flex gap-10 justify-center mt-9 ">
+
+        <div class="w-56 h-56 bg-slate-100 mb-9 border-2 shadow-xl  ">
+            <div class="flex gap-3 m-5 rounded-sm">
+                <img src="images/cityimg5.jpg" alt="" class=" w-11 h-11 rounded-full" />
+                <div>
+                <h2 class="font-bold ">Sourabh Raut</h2>
+                <p class="text-[13px]">Address</p>
+             </div>
+            </div>
+            <div class="m-5 text-[15px]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="m-5">
+                Star
+            </div>
+        </div>
+        <div class="w-52 h-56 bg-slate-100 mb-9 border-2 shadow-xl  ">
+            <div class="flex gap-3 m-5 rounded-sm">
+                <img src="images/cityimg5.jpg" alt="" class=" w-11 h-11 rounded-full" />
+                <div>
+                <h2 class="font-bold ">raju bhai</h2>
+                <p class="text-[13px]">Address</p>
+             </div>
+            </div>
+            <div class="m-5 text-[15px]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="m-5">
+                Star
+            </div>
+        </div>
+        <div class="w-52 h-56 bg-slate-100 mb-9 border-2 shadow-xl  ">
+            <div class="flex gap-3 m-5 rounded-sm">
+                <img src="images/cityimg5.jpg" alt="" class=" w-11 h-11 rounded-full" />
+                <div>
+                <h2 class="font-bold ">Aju bhai</h2>
+                <p class="text-[13px]">Address</p>
+             </div>
+            </div>
+            <div class="m-5 text-[15px]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="m-5">
+                Star
+            </div>
+        </div>
+
+    </div>
+        </section>
+
+        <!-- main page footer -->
+
+        <section class="w-full flex p-16 justify-around" >
+
+            <div class="flex flex-col justify-between">
+                <div>
+                <img src="images/logo2 (3).png" alt="log" class="w-8 h-8"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-10 justify-between content-between mt-9">
+            <div class="flex justify-between gap-2 flex-col">
+                <a href="#"><h3 class="font-bold text-[21px]">About</h3></a>
+                <a href="#"><p class="opacity-80 text-[14px]">pyoperin</p></a>
+                <a href="#"><p class="opacity-80 text-[14px]">contact</p></a>
+                <a href="#"><p class="opacity-80 text-[14px]">services</p></a>
+            </div>
+
+            <div class="flex justify-between gap-2 flex-col">
+                <a href="#"><h3 class="font-bold text-[21px]">blog</h3></a>
+                <a href="#"><p class="opacity-80 text-[14px]">company</p></a>
+                <a href="#"><p class="opacity-80 text-[14px]">leadership</p></a>
+                <a href="#"><p class="opacity-80 text-[14px]">Diversity</p></a>
+            </div>
+
+            <div class="flex justify-between gap-2 flex-col">
+                <a href="#"><h3 class="font-bold text-[21px]">Support</h3></a>
+                <a href="#"><p class="opacity-80 text-[14px]">Help center</p></a>
+                <a href="#"><p class="opacity-80 text-[14px]">Management</p></a>
+                <a href="#"><p class="opacity-80 text-[14px]">Privarcy Police</p></a>
+            </div>
+
+            
+
+            <div class="flex gap-4 justify-center items-center content-center">
+                <div class="flex">
+                <i class="fa-brands fa-instagram" style="color: #e044ec;"></i>
+                
+                </div>
+                <div>
+                <i class="fa-brands fa-facebook-f" style="color: #0c62f5;"></i>
+                
+                </div>
+                <div>
+                    <i class="fa-brands fa-whatsapp" style="color: #4bf166;"></i>
+                
+                </div>
+            </div>
+
+        </div> 
+
+        </section>
+
+
+        <!-- buy properties page -->
+
+        <h2 class="font-bold text-[26px] text-center mb-3">Buy properties Page</h2>
+
+        <!-- buy properties nav dropdown bar -->
+
+        <section class="flex justify-start gap-7 ml-9">
+
+            <div class="relative inline-block text-left">
+                <div>
+                  <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                    Property Type
+                    <!-- Heroicon name: chevron-down -->
+                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="options-menu-list" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <div class="py-1" role="none">
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 1</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 2</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 3</button>
+                  </div>
+                </div>
+              </div>
+           
+            <div class="relative inline-block text-left">
+                <div>
+                  <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                    Area
+                    <!-- Heroicon name: chevron-down -->
+                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="options-menu-list" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <div class="py-1" role="none">
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 1</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 2</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 3</button>
+                  </div>
+                </div>
+              </div>
+           
+            <div class="relative inline-block text-left">
+                <div>
+                  <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                    Price Range
+                    <!-- Heroicon name: chevron-down -->
+                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="options-menu-list" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <div class="py-1" role="none">
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 1</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 2</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 3</button>
+                  </div>
+                </div>
+              </div>
+           
+            <div class="relative inline-block text-left">
+                <div>
+                  <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                    More
+                    <!-- Heroicon name: chevron-down -->
+                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="options-menu-list" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <div class="py-1" role="none">
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 1</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 2</button>
+                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 3</button>
+                  </div>
+                </div>
+              </div>
+           
+              
+              
+        </section>
+
+        <!-- buy properties card -->
+
+        
+    <section class="flex mt-12"> 
+        
+        
+    <div class="w-[30%] mx-auto bg-white rounded-xl shadow-md overflow-hidden border-red-200">
+        <div class="">
+        <div class="md:flex-shrink-0">
+        <img class="h-48 w-full object-cover " src="images/cityimg3.jpg" alt="Card image">
+        </div>
+       </div>
+
+       <h3 class="font-bold text-[21px] ml-2"> &#8377; 5000</h3>
+       <div class="opacity-90 ml-2">1200 sqft</div>
+       <div class="opacity-90 ml-2">
+        Address - Lorem ipsum dolor sit.
+       </div>
+       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 m-2 px-2 rounded-md">
+        Buy Property
+      </button>
+    </div>
+    <div class="w-[30%] mx-auto bg-white rounded-xl shadow-md overflow-hidden border-red-200">
+        <div class="">
+        <div class="md:flex-shrink-0">
+        <img class="h-48 w-full object-cover " src="images/cityimg3.jpg" alt="Card image">
+        </div>
+       </div>
+
+       <h3 class="font-bold text-[21px] ml-2"> &#8377; 5000</h3>
+       <div class="opacity-90 ml-2">1200 sqft</div>
+       <div class="opacity-90 ml-2">
+        Address - Lorem ipsum dolor sit.
+       </div>
+       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 m-2 px-2 rounded-md">
+        Buy Property
+      </button>
+    </div>
+    <div class="w-[30%] mx-auto bg-white rounded-xl shadow-md overflow-hidden border-red-200">
+        <div class="">
+        <div class="md:flex-shrink-0">
+        <img class="h-48 w-full object-cover " src="images/cityimg3.jpg" alt="Card image">
+        </div>
+       </div>
+
+       <h3 class="font-bold text-[21px] ml-2"> &#8377; 5000</h3>
+       <div class="opacity-90 ml-2">1200 sqft</div>
+       <div class="opacity-90 ml-2">
+        Address - Lorem ipsum dolor sit.
+       </div>
+       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 m-2 px-2 rounded-md">
+        Buy Property
+      </button>
+    </div>
+
+  
+      
+    </section>
+
+    <!-- footer buy property page -->
+
+    <section class="w-full flex p-16 justify-around" >
+
+        <div class="flex flex-col justify-between">
+            <div>
+            <img src="images/logo2 (3).png" alt="log" class="w-8 h-8"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-10 justify-between content-between mt-9">
+        <div class="flex justify-between gap-2 flex-col">
+            <a href="#"><h3 class="font-bold text-[21px]">About</h3></a>
+            <a href="#"><p class="opacity-80 text-[14px]">pyoperin</p></a>
+            <a href="#"><p class="opacity-80 text-[14px]">contact</p></a>
+            <a href="#"><p class="opacity-80 text-[14px]">services</p></a>
+        </div>
+
+        <div class="flex justify-between gap-2 flex-col">
+            <a href="#"><h3 class="font-bold text-[21px]">blog</h3></a>
+            <a href="#"><p class="opacity-80 text-[14px]">company</p></a>
+            <a href="#"><p class="opacity-80 text-[14px]">leadership</p></a>
+            <a href="#"><p class="opacity-80 text-[14px]">Diversity</p></a>
+        </div>
+
+        <div class="flex justify-between gap-2 flex-col">
+            <a href="#"><h3 class="font-bold text-[21px]">Support</h3></a>
+            <a href="#"><p class="opacity-80 text-[14px]">Help center</p></a>
+            <a href="#"><p class="opacity-80 text-[14px]">Management</p></a>
+            <a href="#"><p class="opacity-80 text-[14px]">Privarcy Police</p></a>
+        </div>
+
+        
+
+        <div class="flex gap-4 justify-center items-center content-center">
+            <div class="flex">
+            <i class="fa-brands fa-instagram" style="color: #e044ec;"></i>
+            
+            </div>
+            <div>
+            <i class="fa-brands fa-facebook-f" style="color: #0c62f5;"></i>
+            
+            </div>
+            <div>
+                <i class="fa-brands fa-whatsapp" style="color: #4bf166;"></i>
+            
+            </div>
+        </div>
+
+    </div> 
+
+    </section>
+            
+    <!-- sell property page -->
+
+   <section class="w-full shadow-lg flex flex-col mt-9">
+
+      <!-- nav bar sell property page -->
+
+    <div class="bg-slate-100 w-full flex flex-row  justify-evenly mt-2">
+        <!-- log -->
+        <div>
+            <img src="images/logo2 (3).png" alt="logo" width="60"  />
+        </div>
+        <!-- nav list -->
+        <div class="">
+            <ul class="flex items-center justify-center gap-10">
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">Home</li>
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">Sell Property</li>
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">Buy Property</li>
+                <li class="hover:text-sky-800 transition-all duration-200  font-bold ">About</li>      
+                <a href="login.html"><button class="py-2 px-3 font-mullish rounded-lg text-sm font-bold
+                     bg-sky-700 text-white border transition-all duration-200
+                     hover:text-sky-950 hidden lg:flex items-center 
+                     ">Sign Up</button></a>
+                </ul>
+        </div>
+    </div>
+
+    <!-- property details section -->
+
+    <div class="mt-8 mx-auto">
+
+      <div>
+      <h2 class="font-bold text-2xl text-center mx-auto">
+        Sell Your property
+      </h2>
+      <p class="text-center text-wrap mt-2">simplify the process of listing a properties for Lorem ipsum dolor sit amet consectetur adipisicing elit. sale and help property find potential buyers quickly and easily.</p>
+      </div>
+
+      <div >
+
+        <p class="font-bold mt-2 text-2xl">Property Type</p>
+
+        <div class="mt-3">
+        
+          <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Commercial</button>
+          
+          
+
+          <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Residential</button>
+
+        </div>
+
+        <h2 class="mt-2 font-bold text-2xl">Purpose</h2>
+
+      <div class="mt-2  w-fit">
+        <button id="myButton" class="border-2 rounded-lg py-1 px-3 ">sell</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-3 ">Lease/Rent</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-3 ">PG</button>
+      </div>
+      
+      <h2 class="mt-2 font-bold text-2xl">Property Details</h2>
+      <!-- for residential properties -->
+      <div class="mt-2 flex flex-wrap w-1/2 gap-2">
+        <button id="myButton" class="border  rounded-lg py-1 px-1 ">Flat/Apartment</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Independent House/villa</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Plot/Land</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">1 Rk/Studio Apartment</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Independent/Builder Floor</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Serviced Apartment</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Farmhouse</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Other</button>
+      </div>
+      <!-- for commercial properties -->
+      <div class="mt-2 flex flex-wrap w-1/2 gap-2">
+    
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Office</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Retail</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Plot/Land</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Storage</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Industry</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">Hospital</button>
+        <button id="myButton" class="border-2 rounded-lg py-1 px-1 ">other</button>
+        
+      </div>
+
+      <div class="mt-3 flex flex-col gap-4 justify-center">
+          <div class="flex gap-5">
+          <label class="font-semibold">Property size</label>
+          <input class="border-2 rounded-sm min-w-fit pl-2 resize-none appearance-none" type="text" id="Property_size" placeholder="Property size..." />
+          </div>
+          
+          <div class="flex gap-20">
+          <label class="font-semibold">Price</label>
+          <input class="border-2 rounded-sm pl-2 min-w-fit resize-none appearance-none" type="number" id="Property_price" placeholder="Price"/>
+          </div>
+          <div class="flex gap-16">
+          <label class="font-semibold">Adress</label>
+          <input class="border-2 rounded-sm pl-2 min-w-fit resize-none appearance-none" type="text" id="Property_address" placeholder="Address"/>
+          </div>
+          <div class="flex gap-8">
+          <label class="font-semibold">Discription</label>
+          <input class="border-2 pl-2 rounded-sm min-w-fit resize-none appearance-none" type="text" id="Property_discription" placeholder="Discription"/>
+        </div>
+      </div>
+
+      <!-- contact form -->
+      <form class="mt-4 flex flex-col gap-3">
+         
+        <h2 class="font-bold text-2xl ">contact information</h2>
+        <div class="mt-3 flex gap-24">
+        <label class="font-semibold">Name</label>
+        <input class="border-2 pl-2 rounded-sm min-w-fit resize-none appearance-none" type="text" id="user_name" placeholder="Enter your name..."/>
+        </div>
+        <div class="flex gap-6">
+        <label class="font-semibold">Mobile Number</label>
+        <input class="border-2 pl-2 rounded-sm min-w-fit resize-none appearance-none" type="number" id="user_mobile-number" placeholder="Enter mobile number..."/>
+        </div>
+        <div class="flex gap-20">
+        
+        <label class="font-semibold">Email Id</label>
+        <input class="border-2 pl-2 rounded-sm min-w-fit resize-none appearance-none" type="email" id="user_email" placeholder="Enter Email id..."/>
+       </div>
+        
+      </form>
+
+      <div class="mt-4">
+      <label class="font-semibold">Property Images</label>
+      <input class="border-2 pl-2 rounded-sm min-w-fit resize-none appearance-none" type="file" id="property-images" name="property-images" accept="image/*" multiple>
+      </div>
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mt-6">
+        Submit
+      </button>
+      
+
+    </div>
+
+    </div>
+
+   </section>
+
+     <!-- log in page -->
+
+     <section class="w-full bg-slate-200 flex flex-col justify-center items-center">
+
+      <div class="w-[347px] h-[416px] mt-4 flex items-center flex-col gap-6">
+
+          <h2 class="text-[60px] text-[#224957]">
+              Sign in
+          </h2>
+
+          <p class="text-[16px]">Sign in and start managing your candidates</p>
+      <div class="flex flex-col ml-5 gap-4">
+
+          <input class="resize-none pl-2 h-9 w-60 rounded-lg border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 border" type="text" id="username" name="username" placeholder="Username..." class="w-full px-4 py-2 placeholder-gray-400 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+          
+
+
+          <input class="resize-none pl-2 h-9 w-60 rounded-lg border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 border" type="password" id="password" name="password" placeholder="password..." class="w-full px-4 py-2 placeholder-gray-400 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent "/>
+      </div>
+          
+
+      <div class="flex justify-between gap-12">
+
+      <div>
+          <input  type="checkbox" id="remember_me" name="remember_me" >
+          <label for="vehicle1">Remember me</label>
+      </div>
+
+          <div class=" cursor-pointer hover:text-slate-500" >Forgot password?</div>
+
+      </div>
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded">
+          Log In
+        </button>
+        <a href="index.html"><button>parat ja</button></a>
+
+      </div>
+
+
+<script src="https://kit.fontawesome.com/254a5c91cb.js" crossorigin="anonymous">
+  
+</script>
+<script src="index.js"></script>
+</body>
+</html>
